@@ -9,17 +9,22 @@
   <link rel="shortcut icon" href="image/logomain-removebg-preview.png" type="image/x-icon">
   <link rel="stylesheet" href="css/font-awesome.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link  href="css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="css/swiper-bundle.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.green.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="js/jquery.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  
+
   <title>Suden Physiotherapy Clinic</title>
 </head>
 
 <body>
+
   <!----------------------------------header--------------------------------------->
   <nav class="bg-gray-100 2xl:h-20 h-16 fixed top-0 inset-x-0 z-40 drop-shadow-[0_4px_3px_rgba(0,0,0,0.09)] ">
     <div class="max-w-6xl mx-auto px-4 2xl:-mt-2 -mt-3.5">
@@ -84,7 +89,8 @@
 
     <!-- mobile menu -->
     <div
-      class="mobile-menu -mt-3 w-full bg-white md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none justify-center hidden md:hidden drop-shadow-[0_4px_3px_rgba(0,0,0,0.625)]">
+      class="mobile-menu -mt-3 w-full bg-white md:bg-transparent rounded shadow-lg px-6 py-4 mt-4 text-center md:p-0 md:mt-0 md:shadow-none justify-center hidden md:hidden drop-shadow-[0_4px_3px_rgba(0,0,0,0.625)]"
+      data-aos="fade" data-aos-anchor=".other-element">
       <a href="#hero"
         class="hide1 font-semibold flex font-semibold justify-center py-2 px-4 text-sm hover:bg-gray-200">Home</a>
       <a href="#about"
@@ -118,7 +124,7 @@
 
   <!----------------------------------hero--------------------------------------->
 
-  <div id="hero" class="relative h-screen w-full flex items-center justify-center text-center bg-cover bg-center mt-16"
+  <div id="hero" class="relative h-screen w-full flex items-center justify-center text-center bg-cover bg-center mt-8"
     style="background-image:url(image/background_image1.jpg);">
     <div class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"></div>
 
@@ -134,10 +140,7 @@
         <p class="mt-3 text-white sm:mt-5 sm:text-md sm:max-w-xl sm:mx-auto md:mt-5">
           An Individual Plan Of Treatment And Care.
         </p>
-        <p class="mt-3 text-white sm:mt-5 sm:text-md sm:max-w-xl sm:mx-auto md:mt-5">
-          Communication With The Caregiver And Patient Every Step Of
-          The Way Including Recovery Time and Comprehensive Treatment Plan Stages.
-        </p>
+        
         <p class="mt-3 text-white sm:mt-5 sm:text-md sm:max-w-xl sm:mx-auto md:mt-5">
           Assess The Patient's Body Function And Movement.
         </p>
@@ -151,7 +154,7 @@
           <div class="mt-3 sm:mt-0 sm:ml-3">
             <a href="#"
               class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-regular rounded-md text-red-700 bg-red-100  ">
-              Schedule A Consultation
+              Schedule A Consultation (on call)
             </a>
           </div>
         </div>
@@ -159,10 +162,11 @@
     </main>
 
   </div>
+
   <!---------------------------------about--------------------------------------->
 
-  <section id="about" class="bg-white dark:bg-gray-100 sm:px-10 mb-10 pb-10 -mt-12">
-    <div class="container px-6 py-24 mx-auto">
+  <section id="about" class="bg-white dark:bg-gray-100 sm:px-10 pb-16 -mt-12">
+    <div class="container px-6 pt-24 mx-auto">
       <div class="items-center lg:flex">
         <div class="lg:w-1/2">
           <h2
@@ -170,10 +174,9 @@
             About Us</h2>
 
 
-          <p class="mt-4 text-gray-600 dark:text-gray-400 lg:max-w-md">
-            we are <a class="font-bold text-blue-600 dark:text-red-400" href="#">@suden</a> , Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Illum in sed non alias, fugiat, commodi nemo ut fugit corrupti dolorem
-            sequi ex veniam consequuntur id, maiores beatae ipsa omnis aliquam?
+          <p class="mt-4 text-gray-600 text-left lg:max-w-md">
+            <a class="font-bold text-red-400 uppercase" href="#">@suden</a> physiotherapy has been established in 2021. It is an exclusive physiotherapy clinic brings you its expertisation in different field of physiotherapy treatment for a wide range of medical conditions such as Post Stroke Rehabilitation, Chronic Pulmonary Conditions,Physiotherapy, all kinds of <span id="adouttext" class="hidden"> muscular skeletal problems like cervical pain, back pain, ankle pain, tennis elbow, frozen shoulder, osteoarthritis of knee and various other problems, Post Operative Rehabilitation, Physiotherapy for sports and musculoskeletal injuries , Parents counselling for paediatric patients, Antenatal and Postnatal exercise programs.</span><a id="demo1" onclick="myFunction()"><span class="text-blue-500 ">read more...</span></a> 
+           
           </p>
 
           <div class=" mt-6 -mx-2">
@@ -220,8 +223,9 @@
 
   <!----------------------------------servies------------------------------------>
 
-  <div id="servies" class="parallax bg-[#1f2937] ">
-    <div class=" -mt-0 py-24 -mt-24">
+  <div id="servies" class="bg-scroll sm:bg-fixed items-center justify-center text-center bg-cover bg-center "
+    style="background-image:url(image/background_image1.jpg);">
+    <div class="  pt-20 ">
       <section class="text-slate-400 -mt-10 bg-white-900 body-font">
         <div class="container px-5 py-14 mx-auto">
           <div class="text-center  mb-20">
@@ -230,10 +234,10 @@
               Our Servies</h1>
           </div>
           <div class="flex flex-wrap lg:w-3/5 sm:mx-auto sm:mb-2 -mx-2" data-aos="zoom-in-up">
-            <div class="new3 owl-carousel owl-theme rounded-md backdrop-sepia-0 backdrop-opacity-25 bg-[#ffffff0f] shadow-lg shadow-cyan-[#00000033]  ">
+            <div class="new3 owl-carousel owl-theme rounded-md   ">
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/1.png" alt="back">
                   </div>
@@ -244,7 +248,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/2.png" alt="back">
                   </div>
@@ -255,7 +259,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/3.png" alt="back">
                   </div>
@@ -266,7 +270,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/4.png" alt="back">
                   </div>
@@ -277,7 +281,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/5.png" alt="back">
                   </div>
@@ -288,7 +292,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/6.png" alt="back">
                   </div>
@@ -299,7 +303,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/7.png" alt="back">
                   </div>
@@ -310,7 +314,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/8.png" alt="back">
                   </div>
@@ -321,7 +325,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/9.png" alt="back">
                   </div>
@@ -332,7 +336,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/10.png" alt="back">
                   </div>
@@ -343,7 +347,7 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
                     <img class="h-48 w-40 rounded-t-lg" src="image/11.png" alt="back">
                   </div>
@@ -354,9 +358,9 @@
               </div>
 
               <div>
-                <div class=" h-full p-2.5 bg-slate-900 rounded-md shadow-lg shadow-black">
+                <div class=" h-full p-3.5 bg-slate-900/50 rounded-md shadow-lg ">
                   <div class=" rounded-t-lg">
-                    <img class="h-48 w-40 rounded-t-lg" src="image/11.png" alt="back">
+                    <img class="h-48 w-40 rounded-t-lg" src="image/12.png" alt="back">
                   </div>
                   <div class=" p-2.5 pl-3.5 text-left rounded-b-lg bg-gray-900 ">
                     <h1 class="text-white">Psychotherapy</h1>
@@ -367,21 +371,149 @@
 
             </div>
           </div>
-          <marquee class="bg-[#ef4444] rounded-2xl mt-10 shadow-2xl"  direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();"
-            data-aos="zoom-in-up">
-            <ul class="ticker-left animate-pulse text-2xl not-italic  block text-white w-full h-10 rounded-2xl">
-              <li>
-                HOME VISIT AVAILABLE : KALOL - AHMEDABAD - GANDHINAGAR
-              </li>
-            </ul>
-          </marquee>
+          <div class="lg:px-32">
+            <marquee class="bg-[#ef4444] rounded-2xl mt-10 shadow-2xl " direction="left" scrollamount="5"
+              onmouseover="this.stop();" onmouseout="this.start();" data-aos="zoom-in-up">
+              <ul class="ticker-left animate-pulse text-2xl not-italic  block text-white w-full h-10 rounded-2xl">
+                <li>
+                  HOME VISIT AVAILABLE : KALOL - AHMEDABAD - GANDHINAGAR
+                </li>
+              </ul>
+            </marquee>
+          </div>
 
 
       </section>
 
     </div>
   </div>
-
+  <!---------------------------------gallery----------------------------->
+  <section class="mb-10 pb-32">
+    <div class=" body-font bg-white  px-5 pt-24  ">
+      <div class="mx-auto ">
+        <div class=" flex flex-col text-center w-full mb-20 ">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 underline underline-offset-8 mb-4 drop-shadow-[0_4px_3px_rgba(0,0,0,0.625)]">
+            Gallery</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Filter photos by categories: <br>
+          <P>click on thumbnails to open Lightbox.</P>
+          </p>
+        </div>
+        <div class="wrapper bg-fixed items-center justify-center text-center bg-cover bg-center -mt-16 sm:-mt-10">
+          <!-- filter Items -->
+          <nav>
+            <div class="items  ">
+              <span
+                class="item  active sm:px-6 sm:py-2 sm:border-2 px-3 py-1 border-[1px] border-red-600 text-red-600 font-medium sm:text-xs text-[9px] leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                data-name="all">All</span>
+              <span
+                class="item sm:px-6 sm:py-2 sm:border-2 px-3 py-1 border-[1px] border-red-600 text-red-600 font-medium sm:text-xs text-[9px] leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                data-name="shoe">Clinic</span>
+              <span
+                class="item sm:px-6 sm:py-2 sm:border-2 px-3 py-1 border-[1px] border-red-600 text-red-600 font-medium sm:text-xs text-[9px] leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                data-name="bag">Therapy</span>
+              
+              <span
+                class="item sm:px-6 sm:py-2 sm:border-2 px-3 py-1 border-[1px] border-red-600 text-red-600 font-medium sm:text-xs text-[9px] leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                data-name="clinics">Camp</span>
+            </div>
+          </nav>
+          <div class="container hidden lg:flex px-5 py-2 mx-auto lg:pt-12 lg:px-32 pt-10 px-10 gallerys">
+            <div class=" galleryy flex flex-wrap -m-1 md:-m-2">
+              <div class=" image flex flex-wrap w-1/3" data-name="bag">
+                <div class="w-full p-1 md:p-2 ">
+                  <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" target="_blank">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"></a>
+                </div>
+              </div>
+              <div class=" image flex flex-wrap w-1/3" data-name="bag">
+                <div class="w-full p-1 md:p-2">
+                  <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" target="_blank">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"></a>
+                </div>
+              </div>
+              <div class=" image flex flex-wrap w-1/3" data-name="clinics">
+                <div class="w-full p-1 md:p-2">
+                  <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" target="_blank">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"></a>
+                </div>
+              </div>
+              <div class=" image flex flex-wrap w-1/3" data-name="bag">
+                <div class="w-full p-1 md:p-2">
+                  <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(71).webp" target="_blank">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(71).webp"></a>
+                </div>
+              </div>
+              <div class=" image flex flex-wrap w-1/3" data-name="shoe">
+                <div class="w-full p-1 md:p-2">
+                  <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" target="_blank">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"></a>
+                </div>
+              </div>
+              <div class=" image flex flex-wrap w-1/3" data-name="clinics">
+                <div class="w-full p-1 md:p-2">
+                  <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" target="_blank">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32 pt-10 px-10 lg:hidden gallerys">
+      <div class=" galleryy flex flex-wrap -m-1 md:-m-2">
+        <div class=" image flex flex-wrap w-1/3" data-name="bag">
+          <div class="w-full p-1 md:p-2 ">
+            <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" target="_blank">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"></a>
+          </div>
+        </div>
+        <div class=" image flex flex-wrap w-1/3" data-name="bag">
+          <div class="w-full p-1 md:p-2">
+            <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" target="_blank">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"></a>
+          </div>
+        </div>
+        <div class=" image flex flex-wrap w-1/3" data-name="clinics">
+          <div class="w-full p-1 md:p-2">
+            <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" target="_blank">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"></a>
+          </div>
+        </div>
+        <div class=" image flex flex-wrap w-1/3" data-name="bag">
+          <div class="w-full p-1 md:p-2">
+            <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(71).webp" target="_blank">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(71).webp"></a>
+          </div>
+        </div>
+        <div class=" image flex flex-wrap w-1/3" data-name="shoe">
+          <div class="w-full p-1 md:p-2">
+            <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" target="_blank">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"></a>
+          </div>
+        </div>
+        <div class=" image flex flex-wrap w-1/3" data-name="clinics">
+          <div class="w-full p-1 md:p-2">
+            <a href="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" target="_blank">
+              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!----------------------------------team--------------------------------------->
 
   <section id="team" class="text-gray-600 body-font bg-gray-100 -mt-10 pb-20 bg-blend-multiply shadow-2xl ">
@@ -395,7 +527,7 @@
           They are very enthusiastic and passionate professionals and are committed to give our clients the best
           outcomes.</p>
       </div>
-      <div class="flex flex-wrap -m-2">
+      <div class="flex flex-wrap -m-2 lg:pt-24 lg:px-32">
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full " data-aos="zoom-in-up">
           <div
             class="h-full flex items-center border-gray-200 bg-gray-800 border p-4 rounded-lg drop-shadow-[0_4px_3px_rgba(0,0,0,0.625)]">
@@ -495,7 +627,8 @@
             <div class="flex-grow">
               <h2 class="text-red-400 title-font font-medium">Dr. Navin M. Vaniya</h2>
               <p class="text-white text-sm">(PT,CMT,GSCPT)</p>
-              <P class="text-white mb-2 "> <a href="tel:7202998503">Call <span class="text-blue-900">+91 72029 98503</span></a></P>
+              <P class="text-white mb-2 "> <a href="tel:7202998503">Call <span class="text-blue-900">+91 72029
+                    98503</span></a></P>
 
               <span class="inline-flex ">
                 <a class="text-gray-500">
@@ -529,31 +662,37 @@
     </div>
 
   </section>
-  <!---------------------------------blog and news----------------------------->
- 
 
   <!--------------------------------Testimonial---------------------------->
-
-  <section class=" body-font bg-white mb-10 px-5 py-24 -mt-24 ">
+  
+    
+        
+     
+  <section class=" body-font bg-white mb-10 px-5 pt-24 pb-20 -mt-24 lg:pt-24 lg:px-[350px]">
     <div class="mx-auto ">
-      <div class=" flex flex-col text-center w-full mb-20 ">
+      <div class=" flex flex-col text-center w-full mb-14 ">
         <h1
           class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 underline underline-offset-8 mb-4 drop-shadow-[0_4px_3px_rgba(0,0,0,0.625)]">
           Testimonial</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Read what our patient are saying to we  helped to make a difference in their life.</p>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Read what our patient are saying to we helped to make a
+          difference in their life.</p>
       </div>
 
     </div>
-    <div data-aos="zoom-in-up">
+    <div class="bg-gray-50 lg:p-8 p-2 rounded-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+      </svg>
+      
+    <div data-aos="zoom-in-up  ">
       <div>
         <div>
-          <div class="swiper-container">
+          <div class="swiper-container overflow-hidden">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <blockquote class="p-8 bg-gray-100 rounded-lg">
+                <blockquote class="p-8 bg-gray-50 rounded-lg">
                   <div class="flex items-center">
-                    <img src="image/Harshad Chauhan.png" alt=""
-                      class="object-cover w-16 h-16 rounded-full">
+                    <img src="image/Harshad Chauhan.png" alt="" class="object-cover w-16 h-16 rounded-full">
 
                     <div class="ml-4">
                       <div class="flex space-x-0.5 justify-center text-green-500">
@@ -595,10 +734,9 @@
               </li>
 
               <li class="swiper-slide">
-                <blockquote class="p-8 bg-gray-100 rounded-lg">
+                <blockquote class="p-8 bg-gray-50 rounded-lg">
                   <div class="flex items-center">
-                    <img src="image/vivek patel.png" alt=""
-                      class="object-cover w-16 h-16 rounded-full">
+                    <img src="image/vivek patel.png" alt="" class="object-cover w-16 h-16 rounded-full">
 
                     <div class="ml-4">
                       <div class="flex space-x-0.5 justify-center text-green-500">
@@ -634,17 +772,17 @@
                   </div>
 
                   <p class="mt-4 text-gray-500">
-                    I would like to say that this physiotherapy clinic is the best physio skills and modalities. Apart from that they work very hard and give the results to patients.
+                    I would like to say that this physiotherapy clinic is the best physio skills and modalities. Apart
+                    from that they work very hard and give the results to patients.
                     Thank you🌹🌹
                   </p>
                 </blockquote>
               </li>
 
               <li class="swiper-slide">
-                <blockquote class="p-8 bg-gray-100 rounded-lg">
+                <blockquote class="p-8 bg-gray-50 rounded-lg">
                   <div class="flex items-center">
-                    <img src="image/kajal_p01.png" alt=""
-                      class="object-cover w-16 h-16 rounded-full">
+                    <img src="image/kajal_p01.png" alt="" class="object-cover w-16 h-16 rounded-full">
 
                     <div class="ml-4">
                       <div class="flex space-x-0.5 justify-center text-green-500">
@@ -680,16 +818,17 @@
                   </div>
 
                   <p class="mt-4 text-gray-500">
-                    Being at Suden Physiotherapy Clinic has been an amazing experience, the therapists provide a spectrum of treatment facilities with advanced services such as Hijama therapy, Dry Needling, Chiropractic and Cupping therapy. The results are impeccable and long lasting.
+                    Being at Suden Physiotherapy Clinic has been an amazing experience, the therapists provide a
+                    spectrum of treatment facilities with advanced services such as Hijama therapy, Dry Needling,
+                    Chiropractic and Cupping therapy. The results are impeccable and long lasting.
                   </p>
                 </blockquote>
               </li>
 
               <li class="swiper-slide">
-                <blockquote class="p-8 bg-gray-100 rounded-lg">
+                <blockquote class="p-8 bg-gray-50 rounded-lg">
                   <div class="flex items-center">
-                    <img src="image/Aastha Devang.png" alt=""
-                      class="object-cover w-16 h-16 rounded-full">
+                    <img src="image/Aastha Devang.png" alt="" class="object-cover w-16 h-16 rounded-full">
 
                     <div class="ml-4">
                       <div class="flex space-x-0.5 justify-center text-green-500">
@@ -729,60 +868,19 @@
                   </p>
                 </blockquote>
               </li>
-
             </ul>
           </div>
         </div>
       </div>
-
-      <div class="flex justify-center gap-4 mt-8 lg:hidden">
-        <button aria-label="Previous slide"
-          class="p-4 text-red-500 border border-pink-600 rounded-full hover:bg-red-500 hover:text-white prev-button">
-          <svg class="w-5 h-5 transform -rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-          </svg>
-        </button>
-
-        <button aria-label="Next slide"
-          class="p-4 text-red-500 border border-pink-600 rounded-full hover:bg-red-500 hover:text-white next-button">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-          </svg>
-        </button>
-      </div>
-
-      <div class="max-w-full text-center sm:text-left  ">
-
-
-        <div class="hidden lg:mt-8 lg:flex justify-center lg:gap-4 ">
-
-
-          <button aria-label="Previous slide"
-            class=" prev-button inline-block px-6 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded ">
-
-            <span class="title-font  font-medium">privious</span>
-
-          </button>
-
-          <button aria-label="Next slide"
-            class=" next-button inline-block px-9 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded ">
-
-            <span class="title-font  font-medium">next</span>
-
-          </button>
-
-          
-        </div>
-      </div>
     </div>
-
+   
+  </div>
 
 
   </section>
   <!------------------------------------faq-------------------------------->
 
-  <section id="faq" class="text-gray-600 bg-[#edf5f9] body-font  ">
+  <section id="faq" class="text-gray-600 bg-gray-100 body-font  ">
     <div class=" px-5 py-24 -mt-24 mx-auto ">
       <div class=" flex flex-col text-center w-full mb-20 ">
         <h1
@@ -791,13 +889,14 @@
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Some frequently asked questions regarding physiotherapy
           services..</p>
       </div>
-      <div class="px-4 py-16 -mt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" data-aos="zoom-in-up">
+      <div class="px-4 py-16 -mt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        data-aos="zoom-in-up">
 
-        <div id="accordion-open" class="grid gap-4" data-accordion="open">
+        <div id="accordion-open" class="grid gap-4 lg:px-32" data-accordion="open">
           <div>
             <h2 id="accordion-open-heading-1">
               <button type="button"
-                class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border rounded-lg   border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border rounded-lg  "
                 data-accordion-target="#accordion-open-body-1" aria-expanded="false"
                 aria-controls="accordion-open-body-1">
                 <span class="flex items-center">1) Can physiotherapists eliminate my pain for good?</span>
@@ -810,84 +909,84 @@
               </button>
             </h2>
             <div id="accordion-open-body-1" class="hidden" aria-labelledby="accordion-open-heading-1">
-              <div class="p-5 border  border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-gray-500 dark:text-gray-400">Sometimes surgery or other medical interventions are necessary. However, in the vast majority of situations, physiotherapy can help to eliminate pain permanently. Physiotherapists will guide clients in steps they can take to stay pain-free in the future by altering the patterns and motions that originally caused the pain.</p>
-  
+              <div class="p-5 border  border-gray-200 dark:border-gray-700 rounded-lg bg-white">
+                <p class="mb-2 text-gray-500 dark:text-gray-400 ">Sometimes surgery or other medical interventions are
+                  necessary. However, in the vast majority of situations, physiotherapy can help to eliminate pain
+                  permanently. Physiotherapists will guide clients in steps they can take to stay pain-free in the
+                  future by altering the patterns and motions that originally caused the pain.</p>
+
               </div>
             </div>
           </div>
 
-        <div>
-          <h2 id="accordion-open-heading-2">
-            <button type="button"
-              class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border rounded-lg   border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-              data-accordion-target="#accordion-open-body-2" aria-expanded="false"
-              aria-controls="accordion-open-body-2">
-              <span class="flex items-center">2   qustation two?</span>
-              <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </h2>
-          <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
-            <div class="p-5 border  border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the
-                Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+          <div>
+            <h2 id="accordion-open-heading-2">
+              <button type="button"
+              class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border rounded-lg  "
+                data-accordion-target="#accordion-open-body-2" aria-expanded="false"
+                aria-controls="accordion-open-body-2">
+                <span class="flex items-center">2.Is Physiotherapy at home available in my area?</span>
+                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
+              <div class="p-5 border  border-gray-200 dark:border-gray-700 rounded-lg bg-white">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Currently, we provide home physiotherapy service in  KALOL - AHMEDABAD - GANDHINAGAR.To check availability of our physical therapy experts, please contact us over call / WhatsApp.</p>
 
+              </div>
             </div>
           </div>
-        </div>
-
-        <div>
-          <h2 id="accordion-open-heading-3">
-            <button type="button"
-              class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border rounded-lg   border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-              data-accordion-target="#accordion-open-body-3" aria-expanded="false"
-              aria-controls="accordion-open-body-3">
-              <span class="flex items-center">3  qustation three?</span>
-              <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </h2>
-          <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
-            <div class="p-5 border  border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the
-                Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-
-            </div>
-          </div>
-        </div>
 
           <div>
-          <h2 id="accordion-open-heading-4">
-            <button type="button"
-              class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border rounded-lg   border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-              data-accordion-target="#accordion-open-body-4" aria-expanded="false"
-              aria-controls="accordion-open-body-">
-              <span class="flex items-center">qustation four?</span>
-              <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </h2>
-          <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-5">
-            <div class="p-5 border  border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the
-                Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+            <h2 id="accordion-open-heading-3">
+              <button type="button"
+              class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border rounded-lg  "
+                data-accordion-target="#accordion-open-body-3" aria-expanded="false"
+                aria-controls="accordion-open-body-3">
+                <span class="flex items-center">3.What are the charges for physiotherapy session?</span>
+                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
+              <div class="p-5 border  border-gray-200 dark:border-gray-700 rounded-lg bg-white">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">We have a very transparent pricing for our clinic as well as home visit service. Also, for longer treatments requiring 10 or more sessions, you can look at our packages for discounted charges.</p>
 
+              </div>
             </div>
           </div>
-        </div>
+
+          <div>
+            <h2 id="accordion-open-heading-4">
+              <button type="button"
+              class="flex justify-between items-center p-5 w-full font-medium text-left text-gray-500 border rounded-lg  "
+              data-accordion-target="#accordion-open-body-4" aria-expanded="false"
+                aria-controls="accordion-open-body-">
+                <span class="flex items-center">4.What is the duration of eash session?</span>
+                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-5">
+              <div class="p-5 border  border-gray-200 dark:border-gray-700 rounded-lg bg-white">
+                <p class="mb-2 text-gray-500 dark:text-gray-400 ">Usually the session is for 30-45 minutes, However the session duration can be increased up to 1 hour or 90 minutes in case the treatment is needed for longer durations. Please note that standard charges mentioned on our website are for 30-45 min session. For longer duration sessions, charges will be higher.</p>
+
+              </div>
+            </div>
+          </div>
         </div>
 
 
@@ -933,8 +1032,9 @@
           <div class="h-full flex items-start">
             <div
               class="w-12 flex-shrink-0 flex flex-col text-center leading-none drop-shadow-[2px_4px_3px_rgba(0,0,0,0.625)]">
-              <img src="image/contact-us.png" fill="none" stroke="currentColor" stroke-linecap="squre" stroke-linejoin="squre"
-                stroke-width="2" class="w-10 h-10  text-white p-0 bg-inherit " viewBox="0 0 24 24">
+              <img src="image/contact-us.png" fill="none" stroke="currentColor" stroke-linecap="squre"
+                stroke-linejoin="squre" stroke-width="2" class="w-10 h-10  text-white p-0 bg-inherit "
+                viewBox="0 0 24 24">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
 
@@ -942,42 +1042,77 @@
             <div class="flex-grow pl-6">
 
               <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Contact Us</h1>
-              <p class="leading-relaxed mb-5">91+ 93160 27634
-                <br> Sudenphysiotherapyclinic-<br>-@gmail.com
+              <p class="leading-relaxed mb-5">91+ 93160 27634 </br>
+                <gmail class="text-">Sudenphysiotherapyclinic@gmail.com</gmail>
               </p>
 
             </div>
           </div>
         </div>
-        <div class="py-8 px-4 lg:w-1/3" data-aos="zoom-in-up">
+        <!--------------------------------------------------------------->
+        <div class=" wrapper py-8 px-4 lg:w-1/3" data-aos="zoom-in-up">
           <div class="h-full flex items-start">
-            <div
-              class="w-12 flex-shrink-0 flex flex-col text-center leading-none drop-shadow-[2px_4px_3px_rgba(0,0,0,0.625)]">
-              <img src="image/address.png" fill="none" stroke="currentColor" stroke-linecap="squre" stroke-linejoin="squre"
-                stroke-width="2" class="w-10 h-10  text-white p-0 bg-inherit " viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
+          <div
+            class="w-12 flex-shrink-0 flex flex-col text-center leading-none drop-shadow-[2px_4px_3px_rgba(0,0,0,0.625)]">
+            <img src="image/address.png" fill="none" stroke="currentColor" stroke-linecap="squre"
+              stroke-linejoin="squre" stroke-width="2" class="w-10 h-10  text-white p-0 bg-inherit "
+              viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
 
+          </div>
+          
+          <input class="hidden" type="radio" name="slider" checked id="home">
+          <input class="hidden" type="radio" name="slider" id="blog">
+          
+          <section class="flex-grow pl-6">
+            <div class="flex-grow">
+
+              <h1 class="title-font text-xl font-medium text-gray-900">Our Address</h1>
+              <p class="leading-relaxed mb-3 text-xs">select your near by clinic </p>
+        
             </div>
-            <div class="flex-grow pl-6">
+            <nav class=" items-center h-12 relative max-w-full">
+              <label for="home"
+                class="home sm:px-6 sm:py-2 sm:border-2 px-3 py-1 border-[1px] border-red-600 text-red-600 font-medium sm:text-xs text-[9px] leading-tight uppercase rounded-full hover:bg-red-500 active:bg-gray-200 active:bg-opacity-10 hover:bg-opacity-10 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"><i
+                  class="fa fa-hospital-o pr-2"></i>suden</label>
+              <label for="blog"
+                class="blog sm:px-6 sm:py-2 sm:border-2 px-3 py-1 border-[1px] border-red-600 text-red-600 font-medium sm:text-xs text-[9px] leading-tight uppercase rounded-full hover:bg-red-500 active:bg-gray-200 active:bg-opacity-10 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"><i
+                  class="fa fa-hospital-o pr-2"> </i>Sparch and suden</label>
+                  
+              <div class="slider "></div>
+            </nav>
+            <div class=" content content-1 hidden bg-white">
 
-              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Our Address</h1>
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">SUDEN Physiotherapy Clinic</h1>
               <p class="leading-relaxed mb-5">G-85, Yogi Complex, Behind My Life Hospital, Opp. Maharaja Landmark Hotel,
                 Kalol-382721</p>
 
             </div>
-          </div>
+            <div class=" content content-2 hidden bg-white">
+
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">SPARSH & SUDEN Physiotherapy Clinic</h1>
+              <p class="leading-relaxed mb-5">F-6 Shivranjani Residency and Arcade, Borisana Rd, Gujarat Housing Board,
+                Panchavati, Ambika Nagar, Kalol, Gujarat 382721</p>
+
+            </div>
+            
+          </section>
+        </div>
         </div>
       </div>
     </div>
 
   </section>
+
+  
+
   <!--------------------------------map------------------------------------------>
 
   <section class=" relative -mt-10">
     <div class="absolute inset-1" data-aos="zoom-in-up">
       <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="yes"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.0700161129143!2d72.49768291480504!3d23.24053908484309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c255218dcc5bf%3A0xf9af02ba7539f4c4!2sSUDEN%20Physiotherapy%20Clinic!5e0!3m2!1sen!2sin!4v1647861134207!5m2!1sen!2sin"></iframe>
+        src="https://www.google.com/maps/d/u/0/embed?mid=1vRjiImxYrvYXo8WeaLQW8AHcDpSKyeA&ehbc=2E312F"></iframe>
     </div>
     <div class="container px-5 py-32  mx-auto flex">
       <div
@@ -985,7 +1120,14 @@
 
       </div>
     </div>
+
+
+
   </section>
+
+
+
+
   <!-----------------------------fotter------------------------------------------>
   <footer class="text-gray-600 body-font relative bg-gray-900">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
@@ -1026,106 +1168,21 @@
     </div>
   </footer>
   <!-----------------------------js---------------------------------------------->
-  <script type="text/javascript">
-    const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
-    const ka = document.querySelector(".hide1");
-    const kb = document.querySelector(".hide2");
-    const kc = document.querySelector(".hide3");
-    const kd = document.querySelector(".hide4");
-    const ke = document.querySelector(".hide5");
-
-
-    // add event listeners
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-    ka.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-    kb.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-    kc.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-    kd.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-    ke.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
 
 
 
-    $(document).ready(function () {
-      $('.owl-carousel').owlCarousel({
-        //  animateOut: 'zoomOutLeft',
-        //  animateIn: 'pulse',
-        loop: true,
-        margin: 10,
-        nav: false,
-        autoplay: true,
-        dotsContainer: false,
-        autoplayTimeout: 3000,
-        stagePadding: 0,
-        dots: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 5
-          },
-          1000: {
-            items: 3
-          }
-        }
-      })
-    })
 
-
-  </script>
-  <style>
-    .swiper-container {
-      overflow: hidden;
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 32,
-            autoplay: {
-                delay: 8000,
-            },
-            navigation: {
-                nextEl: '.next-button',
-                prevEl: '.prev-button',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    centeredSlides: true,
-                },
-                1024: {
-                    centeredSlides: false,
-                    slidesPerView: 3,
-                },
-            },
-        })
-    })
-</script>
   <script crossorigin="anonymous" defer src="js/swiper-bundle.min.js"></script>
   <script src="js/flowbite.js"></script>
   <script src="js/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 90,
-      duration: 1000,
-    });
-  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/app.js"></script>
+  <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
 
 </body>
 
